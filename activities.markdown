@@ -9,6 +9,10 @@ header:
 
 <ul class="posts">
 {% for post in site.categories.activities %}
-  {% include post.html %}
+  {% if site.time < post.date %}
+    {% include upcoming_post.html %}
+  {% else %}
+    {% include post.html %}
+  {% endif %}
 {% endfor %}
 </ul>

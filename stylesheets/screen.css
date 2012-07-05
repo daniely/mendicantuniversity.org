@@ -342,6 +342,9 @@ ul.posts li a {
 ul.posts li a span.date {
   float: right;
 }
+ul.posts li.upcoming {
+  background-color: #f7f9d0;
+}
 
 .date-time {
   display: inline-block;
